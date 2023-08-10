@@ -24,6 +24,8 @@ RUN pip3 install uuid
 
 RUN  go env -w GO111MODULE=auto
 
+RUN apt-get install python3-ldapdomaindump -y
+
 RUN apt-get install gobuster -y
 
 RUN apt-get install ffuf -y
@@ -49,6 +51,17 @@ RUN apt-get install fping -y
 RUN apt-get install nikto -y
 
 RUN apt-get install hydra -y
+
+RUN apt-get install onesixtyone -y
+
+RUN apt-get install snmpwalk -y
+
+RUN apt-get install snmp-check -y
+
+RUN apt-get install python3-impacket -y
+
+RUN git clone https://github.com/dirkjanm/adidnsdump
+RUN cd adidnsdump && pip3 install adidnsdump
 
 RUN go install -v github.com/projectdiscovery/httpx/cmd/httpx@latest
 RUN mv /root/go/bin/httpx /usr/bin/
