@@ -26,6 +26,8 @@ RUN  go env -w GO111MODULE=auto
 
 RUN apt-get install python3-ldapdomaindump -y
 
+RUN apt-get install dnsutils -y
+
 RUN apt-get install gobuster -y
 
 RUN apt-get install ffuf -y
