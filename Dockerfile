@@ -54,9 +54,7 @@ RUN apt-get install hydra -y
 
 RUN apt-get install onesixtyone -y
 
-RUN apt-get install snmpwalk -y
-
-RUN apt-get install snmp-check -y
+RUN apt-get install snmp -y
 
 RUN apt-get install python3-impacket -y
 
