@@ -14,6 +14,8 @@ RUN apt install git -y
 
 RUN apt install vim -y
 
+RUN apt install nano -y
+
 RUN apt install golang -y
 
 RUN apt install python3 -y
